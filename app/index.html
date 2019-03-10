@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="khtmotors" class="no-js">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135947840-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135947840-1');
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4342374986716529",
+    enable_page_level_ads: true
+  });
+</script>
+
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CHEF</title>
+  <meta name="description" content="">
+	 <link rel="icon" type="image/ico" href="favicon.ico">
+	 <link href="bootstrap/css/bootstrap.css" rel="stylesheet">   
+	 <link href="styles/style.css?v=10" rel="stylesheet">
+    <link href="bootstrap-datepicker/css/datepicker.css" rel="stylesheet">
+    <link href="bootstrap-datepicker/css/datepicker3.css" rel="stylesheet">
+    <link href="clockpicker/clockpicker.css" rel="stylesheet">
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/flexslider/2.2.2/flexslider.css">
+
+</head>
+	<style>
+	.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+}
+	</style>
+
+
+
+<body ng-cloak>
+	<div class="se-pre-con"></div>
+	<div ng-include="'views/header.html'" ng-cloak></div>
+	<div   ng-view="" style="height: fit-content;" ng-cloak></div>	
+		  <script src="//cdn.jsdelivr.net/flexslider/2.2.2/jquery.flexslider-min.js"></script>
+  <script src="//cdn.jsdelivr.net/flexslider/2.2.2/jquery.flexslider.js"></script>
+
+  <script src="js/jquery.min.js"></script>  
+    <script src="js/angular-flexslider.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCJE10pTn-OXoSutGKkHBVgu1cIk4n56ck"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+  <script src="clockpicker/clockpicker.js"></script>  
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular/ngStorage.js"></script>
+  <script src="app.js?v=10"></script>
+  <script src="js/angular-base64-upload.js"></script>
+  <script src="scripts/header.js?v=10"></script>
+  <script src="scripts/main.js?v=10"></script>
+    <script src="scripts/aboutus.js?v=10"></script>
+      <script src="scripts/myaccount.js?v=10"></script>
+</body>
+	<script>
+	 jQuery(window).load(function() {
+		// Animate loader off screen
+		jQuery(".se-pre-con").fadeOut("slow");;
+	});	
+
+	</script>
+	
+</html>

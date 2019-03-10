@@ -1,0 +1,210 @@
+# Logfile created on 2017-08-31 10:48:57 +0530 by logger.rb/47272
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-08-31 10:48:57 +0530 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [f5ea1bbf] Running /usr/bin/env mkdir -p /home/deploy/tmp as deploy@88.99.140.158
+ DEBUG [f5ea1bbf] Command: /usr/bin/env mkdir -p /home/deploy/tmp
+  INFO [f5ea1bbf] Finished in 18.944 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/deploy/tmp/git-ssh-kht-motors-production-user.sh 0.0%
+  INFO Uploading /home/deploy/tmp/git-ssh-kht-motors-production-user.sh 100.0%
+  INFO [9e8bfb94] Running /usr/bin/env chmod 700 /home/deploy/tmp/git-ssh-kht-motors-production-user.sh as deploy@88.99.140.158
+ DEBUG [9e8bfb94] Command: /usr/bin/env chmod 700 /home/deploy/tmp/git-ssh-kht-motors-production-user.sh
+  INFO [9e8bfb94] Finished in 0.295 seconds with exit status 0 (successful).
+  INFO [ed945a41] Running /usr/bin/env git ls-remote git@bitbucket.org:myridz/kht-motors.git HEAD as deploy@88.99.140.158
+ DEBUG [ed945a41] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/deploy/tmp/git-ssh-kht-motors-production-user.sh" ; /usr/bin/env git ls-remote git@bitbucket.org:myridz/kht-motors.git HEAD )
+ DEBUG [ed945a41] 	d110254766b9dd6082bc8765854d2917b138d34c	HEAD
+  INFO [ed945a41] Finished in 1.979 seconds with exit status 0 (successful).
+  INFO [ce408f05] Running /usr/bin/env mkdir -p /home/deploy/web_ver1/production/kht-motors/shared /home/deploy/web_ver1/production/kht-motors/releases as deploy@88.99.140.158
+ DEBUG [ce408f05] Command: /usr/bin/env mkdir -p /home/deploy/web_ver1/production/kht-motors/shared /home/deploy/web_ver1/production/kht-motors/releases
+  INFO [ce408f05] Finished in 0.429 seconds with exit status 0 (successful).
+ DEBUG [1e491971] Running [ -f /home/deploy/web_ver1/production/kht-motors/current/REVISION ] as deploy@88.99.140.158
+ DEBUG [1e491971] Command: [ -f /home/deploy/web_ver1/production/kht-motors/current/REVISION ]
+ DEBUG [1e491971] Finished in 0.292 seconds with exit status 1 (failed).
+ DEBUG [62a71cd7] Running [ -f /home/deploy/web_ver1/production/kht-motors/repo/HEAD ] as deploy@88.99.140.158
+ DEBUG [62a71cd7] Command: [ -f /home/deploy/web_ver1/production/kht-motors/repo/HEAD ]
+ DEBUG [62a71cd7] Finished in 0.293 seconds with exit status 1 (failed).
+ DEBUG [b3de9522] Running if test ! -d /home/deploy/web_ver1/production/kht-motors; then echo "Directory does not exist '/home/deploy/web_ver1/production/kht-motors'" 1>&2; false; fi as deploy@88.99.140.158
+ DEBUG [b3de9522] Command: if test ! -d /home/deploy/web_ver1/production/kht-motors; then echo "Directory does not exist '/home/deploy/web_ver1/production/kht-motors'" 1>&2; false; fi
+ DEBUG [b3de9522] Finished in 0.293 seconds with exit status 0 (successful).
+  INFO [d037af7b] Running /usr/bin/env git clone --mirror git@bitbucket.org:myridz/kht-motors.git /home/deploy/web_ver1/production/kht-motors/repo as deploy@88.99.140.158
+ DEBUG [d037af7b] Command: cd /home/deploy/web_ver1/production/kht-motors && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/deploy/tmp/git-ssh-kht-motors-production-user.sh" ; /usr/bin/env git clone --mirror git@bitbucket.org:myridz/kht-motors.git /home/deploy/web_ver1/production/kht-motors/repo )
+ DEBUG [d037af7b] 	Cloning into bare repository '/home/deploy/web_ver1/production/kht-motors/repo'...
+ DEBUG [d037af7b] 	remote: Counting objects: 336, done.[K
+ DEBUG [d037af7b] 	remote: Compressing objects:   0% (1/283)   [Kremote: Compressing objects:   1% (3/283)   [Kremote: Compressing objects:   2% (6/283)   [Kremote: Compressing objects:   3% (9/283)   [Kremote: Compressing objects:   4% (12/283)   [Kremote: Compressing objects:   5% (15/283)   [Kremote: Compressing objects:   6% (17/283)   [Kremote: Compressing objects:   7% (20/283)   [Kremote: Compressing objects:   8% (23/283)   [K
+ DEBUG [d037af7b] 	remote: Compressing objects:   9% (26/283)   [Kremote: Compressing objects:  10% (29/283)   [K
+ DEBUG [d037af7b] 	remote: Compressing objects:  11% (32/283)   [Kremote: Compressing objects:  12% (34/283)   [K
+ DEBUG [d037af7b] 	remote: Compressing objects:  13% (37/283)   [K
+ DEBUG [d037af7b] 	remote: Compressing objects:  14% (40/283)   [Kremote: Compressing objects:  15% (43/283)   [Kremote: Compressing objects:  16% (46/283)   [Kremote: Compressing objects:  17% (49/283)   [Kremote: Compressing objects:  18% (51/283)   [Kremote: Compressing objects:  19% (54/283)   [Kremote: Compressing objects:  20% (57/283)   [Kremote: Compressing objects:  21% (60/283)   [Kremote: Compressing objects:  22% (63/283)   [Kremote: Compressing objects:  23% (66/283)   [Kremote: Compressing objects:  24% (68/283)   [Kremote: Compressing objects:  25% (71/283)   [Kremote: Compressing objects:  26% (74/283)   [Kremote: Compressing objects:  27% (77/283)   [Kremote: Compressing objects:  28% (80/283)   [Kremote: Compressing objects:  29% (83/283)   [Kremote: Compressing objects:  30% (85/283)   [Kremote: Compressing objects:  31% (88/283)   [Kremote: Compressing objects:  32% (91/283)   [Kremote: Compressing objects:  33% (94/283)   [Kremote: Compressing objects:  34% (97/283)   [K
+ DEBUG [d037af7b] 	remote: Compressing objects:  35% (100/283)   [Kremote: Compressing objects:  36% (102/283)   [Kremote: Compressing objects:  37% (105/283)   [Kremote: Compressing objects:  38% (108/283)   [Kremote: Compressing objects:  39% (111/283)   [Kremote: Compressing objects:  40% (114/283)   [Kremote: Compressing objects:  41% (117/283)   [Kremote: Compressing objects:  42% (119/283)   [Kremote: Compressing objects:  43% (122/283)   [K
+ DEBUG [d037af7b] 	remote: Compressing objects:  44% (125/283)   [Kremote: Compressing objects:  45% (128/283)   [Kremote: Compressing objects:  46% (131/283)   [Kremote: Compressing objects:  47% (134/283)   [Kremote: Compressing objects:  48% (136/283)   [Kremote: Compressing objects:  49% (139/283)   [Kremote: Compressing objects:  50% (142/283)   [Kremote: Compressing objects:  51% (145/283)   [Kremote: Compressing objects:  52% (148/283)   [Kremote: Compressing objects:  53% (150/283)   [Kremote: Compressing objects:  54% (153/283)   [Kremote: Compressing objects:  55% (156/283)   [Kremote: Compressing objects:  56% (159/283)   [Kremote: Compressing objects:  57% (162/283)   [Kremote: Compressing objects:  58% (165/283)   [Kremote: Compressing objects:  59% (167/283)   [Kremote: Compressing objects:  60% (170/283)   [Kremote: Compressing objects:  61% (173/283)   [K
+ DEBUG [d037af7b] 	remote: Compressing objects:  62% (176/283)   [Kremote: Compressing objects:  63% (179/283)   [Kremote: Compressing objects:  64% (182/283)   [Kremote: Compressing objects:  65% (184/283)   [Kremote: Compressing objects:  66% (187/283)   [Kremote: Compressing objects:  67% (190/283)   [Kremote: Compressing objects:  68% (193/283)   [Kremote: Compressing objects:  69% (196/283)   [Kremote: Compressing objects:  70% (199/283)   [K
+ DEBUG [d037af7b] 	remote: Compressing objects:  71% (201/283)   [Kremote: Compressing objects:  72% (204/283)   [Kremote: Compressing objects:  73% (207/283)   [Kremote: Compressing objects:  74% (210/283)   [Kremote: Compressing objects:  75% (213/283)   [Kremote: Compressing objects:  76% (216/283)   [Kremote: Compressing objects:  77% (218/283)   [K
+ DEBUG [d037af7b] 	remote: Compressing objects:  78% (221/283)   [Kremote: Compressing objects:  79% (224/283)   [K
+ DEBUG [d037af7b] 	remote: Compressing objects:  80% (227/283)   [Kremote: Compressing objects:  81% (230/283)   [Kremote: Compressing objects:  82% (233/283)   [Kremote: Compressing objects:  83% (235/283)   [K
+ DEBUG [d037af7b] 	remote: Compressing objects:  84% (238/283)   [Kremote: Compressing objects:  85% (241/283)   [Kremote: Compressing objects:  86% (244/283)   [Kremote: Compressing objects:  87% (247/283)   [K
+ DEBUG [d037af7b] 	remote: Compressing objects:  88% (250/283)   [Kremote: Compressing objects:  89% (252/283)   [Kremote: Compressing objects:  90% (255/283)   [Kremote: Compressing objects:  91% (258/283)   [Kremote: Compressing objects:  92% (261/283)   [Kremote: Compressing objects:  93% (264/283)   [Kremote: Compressing objects:  94% (267/283)   [Kremote: Compressing objects:  95% (269/283)   [K
+ DEBUG [d037af7b] 	remote: Compressing objects:  96% (272/283)   [K
+ DEBUG [d037af7b] 	remote: Compressing objects:  97% (275/283)   [Kremote: Compressing objects:  98% (278/283)   [Kremote: Compressing objects:  99% (281/283)   [Kremote: Compressing objects: 100% (283/283)   [Kremote: Compressing objects: 100% (283/283), done.[K
+ DEBUG [d037af7b] 	Receiving objects:   0% (1/336)   
+ DEBUG [d037af7b] 	Receiving objects:   1% (4/336)   
+ DEBUG [d037af7b] 	Receiving objects:   2% (7/336)   
+ DEBUG [d037af7b] 	Receiving objects:   3% (11/336)   
+ DEBUG [d037af7b] 	Receiving objects:   4% (14/336)   
+ DEBUG [d037af7b] 	Receiving objects:   5% (17/336)   
+ DEBUG [d037af7b] 	Receiving objects:   6% (21/336)   
+ DEBUG [d037af7b] 	Receiving objects:   7% (24/336)   
+ DEBUG [d037af7b] 	Receiving objects:   8% (27/336)   
+ DEBUG [d037af7b] 	Receiving objects:   9% (31/336)   
+ DEBUG [d037af7b] 	Receiving objects:  10% (34/336)   
+ DEBUG [d037af7b] 	Receiving objects:  11% (37/336)   
+ DEBUG [d037af7b] 	Receiving objects:  12% (41/336)   
+ DEBUG [d037af7b] 	Receiving objects:  13% (44/336)   
+ DEBUG [d037af7b] 	Receiving objects:  14% (48/336)   
+ DEBUG [d037af7b] 	Receiving objects:  15% (51/336)   
+ DEBUG [d037af7b] 	Receiving objects:  16% (54/336)   
+ DEBUG [d037af7b] 	Receiving objects:  17% (58/336)   
+ DEBUG [d037af7b] 	Receiving objects:  18% (61/336)   
+ DEBUG [d037af7b] 	Receiving objects:  19% (64/336)   Receiving objects:  20% (68/336)   
+ DEBUG [d037af7b] 	Receiving objects:  21% (71/336)   
+ DEBUG [d037af7b] 	Receiving objects:  22% (74/336)   
+ DEBUG [d037af7b] 	Receiving objects:  23% (78/336)   
+ DEBUG [d037af7b] 	Receiving objects:  24% (81/336)   
+ DEBUG [d037af7b] 	Receiving objects:  25% (84/336)   
+ DEBUG [d037af7b] 	Receiving objects:  26% (88/336)   
+ DEBUG [d037af7b] 	Receiving objects:  27% (91/336)   
+ DEBUG [d037af7b] 	Receiving objects:  28% (95/336)   
+ DEBUG [d037af7b] 	Receiving objects:  29% (98/336)   
+ DEBUG [d037af7b] 	Receiving objects:  30% (101/336)   
+ DEBUG [d037af7b] 	Receiving objects:  31% (105/336)   
+ DEBUG [d037af7b] 	Receiving objects:  32% (108/336)   
+ DEBUG [d037af7b] 	Receiving objects:  33% (111/336)   
+ DEBUG [d037af7b] 	Receiving objects:  34% (115/336)   
+ DEBUG [d037af7b] 	Receiving objects:  35% (118/336)   
+ DEBUG [d037af7b] 	Receiving objects:  36% (121/336)   
+ DEBUG [d037af7b] 	Receiving objects:  37% (125/336)   
+ DEBUG [d037af7b] 	Receiving objects:  38% (128/336)   
+ DEBUG [d037af7b] 	Receiving objects:  39% (132/336)   
+ DEBUG [d037af7b] 	Receiving objects:  40% (135/336)   
+ DEBUG [d037af7b] 	Receiving objects:  41% (138/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  42% (142/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  43% (145/336), 1.05 MiB | 2.09 MiB/s   Receiving objects:  44% (148/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  45% (152/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  46% (155/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  47% (158/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  48% (162/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  49% (165/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  50% (168/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  51% (172/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  52% (175/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  53% (179/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  54% (182/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  55% (185/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  56% (189/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  57% (192/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  58% (195/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  59% (199/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  60% (202/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  61% (205/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  62% (209/336), 1.05 MiB | 2.09 MiB/s   Receiving objects:  63% (212/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  64% (216/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  65% (219/336), 1.05 MiB | 2.09 MiB/s   Receiving objects:  66% (222/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  67% (226/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  68% (229/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  69% (232/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  70% (236/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  71% (239/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  72% (242/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  73% (246/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  74% (249/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  75% (252/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  76% (256/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  77% (259/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  78% (263/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  79% (266/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  80% (269/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  81% (273/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  82% (276/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  83% (279/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  84% (283/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  85% (286/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  86% (289/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  87% (293/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  88% (296/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  89% (300/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  90% (303/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  91% (306/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  92% (310/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  93% (313/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  94% (316/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	remote: Total 336 (delta 70), reused 257 (delta 40)[K
+ DEBUG [d037af7b] 	Receiving objects:  95% (320/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  96% (323/336), 1.05 MiB | 2.09 MiB/s   Receiving objects:  97% (326/336), 1.05 MiB | 2.09 MiB/s   Receiving objects:  98% (330/336), 1.05 MiB | 2.09 MiB/s   
+ DEBUG [d037af7b] 	Receiving objects:  99% (333/336), 1.05 MiB | 2.09 MiB/s   Receiving objects: 100% (336/336), 1.05 MiB | 2.09 MiB/s   Receiving objects: 100% (336/336), 4.17 MiB | 2.09 MiB/s, done.
+ DEBUG [d037af7b] 	Resolving deltas:   0% (0/70)   
+ DEBUG [d037af7b] 	Resolving deltas:   8% (6/70)   Resolving deltas:  15% (11/70)   
+ DEBUG [d037af7b] 	Resolving deltas:  17% (12/70)   
+ DEBUG [d037af7b] 	Resolving deltas:  18% (13/70)   
+ DEBUG [d037af7b] 	Resolving deltas:  20% (14/70)   Resolving deltas:  24% (17/70)   
+ DEBUG [d037af7b] 	Resolving deltas:  28% (20/70)   Resolving deltas:  30% (21/70)   
+ DEBUG [d037af7b] 	Resolving deltas:  34% (24/70)   Resolving deltas:  35% (25/70)   
+ DEBUG [d037af7b] 	Resolving deltas:  37% (26/70)   Resolving deltas:  38% (27/70)   Resolving deltas:  40% (28/70)   
+ DEBUG [d037af7b] 	Resolving deltas:  45% (32/70)   Resolving deltas:  47% (33/70)   
+ DEBUG [d037af7b] 	Resolving deltas:  48% (34/70)   Resolving deltas:  50% (35/70)   
+ DEBUG [d037af7b] 	Resolving deltas:  52% (37/70)   Resolving deltas:  54% (38/70)   
+ DEBUG [d037af7b] 	Resolving deltas:  65% (46/70)   Resolving deltas:  68% (48/70)   Resolving deltas:  72% (51/70)   Resolving deltas:  74% (52/70)   
+ DEBUG [d037af7b] 	Resolving deltas:  80% (56/70)   
+ DEBUG [d037af7b] 	Resolving deltas:  84% (59/70)   Resolving deltas:  87% (61/70)   
+ DEBUG [d037af7b] 	Resolving deltas:  95% (67/70)   Resolving deltas:  97% (68/70)   
+ DEBUG [d037af7b] 	Resolving deltas: 100% (70/70)   
+ DEBUG [d037af7b] 	Resolving deltas: 100% (70/70), done.
+ DEBUG [d037af7b] 	Checking connectivity... 
+ DEBUG [d037af7b] 	done.
+  INFO [d037af7b] Finished in 3.133 seconds with exit status 0 (successful).
+ DEBUG [b922c3ce] Running if test ! -d /home/deploy/web_ver1/production/kht-motors/repo; then echo "Directory does not exist '/home/deploy/web_ver1/production/kht-motors/repo'" 1>&2; false; fi as deploy@88.99.140.158
+ DEBUG [b922c3ce] Command: if test ! -d /home/deploy/web_ver1/production/kht-motors/repo; then echo "Directory does not exist '/home/deploy/web_ver1/production/kht-motors/repo'" 1>&2; false; fi
+ DEBUG [b922c3ce] Finished in 0.335 seconds with exit status 0 (successful).
+  INFO [046d182c] Running /usr/bin/env git remote set-url origin git@bitbucket.org:myridz/kht-motors.git as deploy@88.99.140.158
+ DEBUG [046d182c] Command: cd /home/deploy/web_ver1/production/kht-motors/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/deploy/tmp/git-ssh-kht-motors-production-user.sh" ; /usr/bin/env git remote set-url origin git@bitbucket.org:myridz/kht-motors.git )
+  INFO [046d182c] Finished in 0.296 seconds with exit status 0 (successful).
+  INFO [928e56e9] Running /usr/bin/env git remote update --prune as deploy@88.99.140.158
+ DEBUG [928e56e9] Command: cd /home/deploy/web_ver1/production/kht-motors/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/deploy/tmp/git-ssh-kht-motors-production-user.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [928e56e9] 	Fetching origin
+  INFO [928e56e9] Finished in 1.966 seconds with exit status 0 (successful).
+ DEBUG [c1c7b7f9] Running if test ! -d /home/deploy/web_ver1/production/kht-motors/repo; then echo "Directory does not exist '/home/deploy/web_ver1/production/kht-motors/repo'" 1>&2; false; fi as deploy@88.99.140.158
+ DEBUG [c1c7b7f9] Command: if test ! -d /home/deploy/web_ver1/production/kht-motors/repo; then echo "Directory does not exist '/home/deploy/web_ver1/production/kht-motors/repo'" 1>&2; false; fi
+ DEBUG [c1c7b7f9] Finished in 0.428 seconds with exit status 0 (successful).
+  INFO [12480c92] Running /usr/bin/env mkdir -p /home/deploy/web_ver1/production/kht-motors/releases/20170831051920 as deploy@88.99.140.158
+ DEBUG [12480c92] Command: cd /home/deploy/web_ver1/production/kht-motors/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/deploy/tmp/git-ssh-kht-motors-production-user.sh" ; /usr/bin/env mkdir -p /home/deploy/web_ver1/production/kht-motors/releases/20170831051920 )
+  INFO [12480c92] Finished in 0.294 seconds with exit status 0 (successful).
+  INFO [c4c454ed] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/web_ver1/production/kht-motors/releases/20170831051920 as deploy@88.99.140.158
+ DEBUG [c4c454ed] Command: cd /home/deploy/web_ver1/production/kht-motors/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/deploy/tmp/git-ssh-kht-motors-production-user.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/web_ver1/production/kht-motors/releases/20170831051920 )
+  INFO [c4c454ed] Finished in 0.331 seconds with exit status 0 (successful).
+ DEBUG [6cfe211c] Running if test ! -d /home/deploy/web_ver1/production/kht-motors/repo; then echo "Directory does not exist '/home/deploy/web_ver1/production/kht-motors/repo'" 1>&2; false; fi as deploy@88.99.140.158
+ DEBUG [6cfe211c] Command: if test ! -d /home/deploy/web_ver1/production/kht-motors/repo; then echo "Directory does not exist '/home/deploy/web_ver1/production/kht-motors/repo'" 1>&2; false; fi
+ DEBUG [6cfe211c] Finished in 0.290 seconds with exit status 0 (successful).
+ DEBUG [56b00867] Running /usr/bin/env git rev-list --max-count=1 master as deploy@88.99.140.158
+ DEBUG [56b00867] Command: cd /home/deploy/web_ver1/production/kht-motors/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/deploy/tmp/git-ssh-kht-motors-production-user.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [56b00867] 	d110254766b9dd6082bc8765854d2917b138d34c
+ DEBUG [56b00867] Finished in 0.293 seconds with exit status 0 (successful).
+ DEBUG [6cbdaa72] Running if test ! -d /home/deploy/web_ver1/production/kht-motors/releases/20170831051920; then echo "Directory does not exist '/home/deploy/web_ver1/production/kht-motors/releases/20170831051920'" 1>&2; false; fi as deploy@88.99.140.158
+ DEBUG [6cbdaa72] Command: if test ! -d /home/deploy/web_ver1/production/kht-motors/releases/20170831051920; then echo "Directory does not exist '/home/deploy/web_ver1/production/kht-motors/releases/20170831051920'" 1>&2; false; fi
+ DEBUG [6cbdaa72] Finished in 0.290 seconds with exit status 0 (successful).
+  INFO [1f1ae1e5] Running /usr/bin/env echo "d110254766b9dd6082bc8765854d2917b138d34c" >> REVISION as deploy@88.99.140.158
+ DEBUG [1f1ae1e5] Command: cd /home/deploy/web_ver1/production/kht-motors/releases/20170831051920 && /usr/bin/env echo "d110254766b9dd6082bc8765854d2917b138d34c" >> REVISION
+  INFO [1f1ae1e5] Finished in 0.295 seconds with exit status 0 (successful).
+  INFO [486d4683] Running /usr/bin/env ln -s /home/deploy/web_ver1/production/kht-motors/releases/20170831051920 /home/deploy/web_ver1/production/kht-motors/releases/current as deploy@88.99.140.158
+ DEBUG [486d4683] Command: /usr/bin/env ln -s /home/deploy/web_ver1/production/kht-motors/releases/20170831051920 /home/deploy/web_ver1/production/kht-motors/releases/current
+  INFO [486d4683] Finished in 0.316 seconds with exit status 0 (successful).
+  INFO [3102ee93] Running /usr/bin/env mv /home/deploy/web_ver1/production/kht-motors/releases/current /home/deploy/web_ver1/production/kht-motors as deploy@88.99.140.158
+ DEBUG [3102ee93] Command: /usr/bin/env mv /home/deploy/web_ver1/production/kht-motors/releases/current /home/deploy/web_ver1/production/kht-motors
+  INFO [3102ee93] Finished in 0.294 seconds with exit status 0 (successful).
+ DEBUG [889115f2] Running /usr/bin/env ls -x /home/deploy/web_ver1/production/kht-motors/releases as deploy@88.99.140.158
+ DEBUG [889115f2] Command: /usr/bin/env ls -x /home/deploy/web_ver1/production/kht-motors/releases
+ DEBUG [889115f2] 	20170831051920
+ DEBUG [889115f2] Finished in 0.293 seconds with exit status 0 (successful).
+ DEBUG [325d22d1] Running if test ! -d /home/deploy/web_ver1/production/kht-motors/releases; then echo "Directory does not exist '/home/deploy/web_ver1/production/kht-motors/releases'" 1>&2; false; fi as deploy@88.99.140.158
+ DEBUG [325d22d1] Command: if test ! -d /home/deploy/web_ver1/production/kht-motors/releases; then echo "Directory does not exist '/home/deploy/web_ver1/production/kht-motors/releases'" 1>&2; false; fi
+ DEBUG [325d22d1] Finished in 0.292 seconds with exit status 0 (successful).
+  INFO [529a1f72] Running /usr/bin/env echo "Branch master (at d110254766b9dd6082bc8765854d2917b138d34c) deployed as release 20170831051920 by user" >> /home/deploy/web_ver1/production/kht-motors/revisions.log as deploy@88.99.140.158
+ DEBUG [529a1f72] Command: cd /home/deploy/web_ver1/production/kht-motors/releases && /usr/bin/env echo "Branch master (at d110254766b9dd6082bc8765854d2917b138d34c) deployed as release 20170831051920 by user" >> /home/deploy/web_ver1/production/kht-motors/revisions.log
+  INFO [529a1f72] Finished in 0.294 seconds with exit status 0 (successful).
